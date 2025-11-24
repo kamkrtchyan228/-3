@@ -1,0 +1,18 @@
+shopping_list = ["хлеб", "молоко", "яблоки", "сыр"]
+print("Исходный список продуктов:", shopping_list)
+
+shopping_list.append("йогурт")
+print("После добавления йогурта:", shopping_list)
+
+print("Итоговый список покупок:")
+for i, product in enumerate(shopping_list, 1):
+    print(f"{i}. {product}")
+
+unique_items = set(shopping_list)
+print("Множество уникальных продуктов:", unique_items)
+
+shopping_list.append("молоко")
+print("Список с дубликатом:", shopping_list)
+
+unique_items = set(shopping_list)
+print("Множество после дубликата:", unique_items)
