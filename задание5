@@ -1,0 +1,24 @@
+name = input("Ваше имя: ")
+age_str = input("Ваш возраст: ")
+subjects_str = input("Любимые предметы: ")
+
+age = int(age_str)
+
+subjects_list_raw = subjects_str.split(',')
+subjects_list = [s.strip() for s in subjects_list_raw if s.strip()]
+
+student = {
+    'Имя': name,
+    'Возраст': age,
+    'Любимые предметы': subjects_list
+}
+
+print("=" * 30)
+print("АНКЕТА СТУДЕНТА")
+print("=" * 30)
+
+print(f"Имя: {student['Имя']}")
+print(f"Возраст: {student['Возраст']}")
+print(f"Любимые предметы: {student['Любимые предметы']}")
+
+print("=" * 30)
