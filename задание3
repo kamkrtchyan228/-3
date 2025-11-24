@@ -1,0 +1,15 @@
+print("=== ПРЕОБРАЗОВАНИЕ ТИПОВ ===")
+
+try:
+    num1 = input("Введите первое число: ")
+    num2 = input("Введите второе число: ")
+    
+    number1 = int(num1)
+    number2 = int(num2)
+    
+    result = number1 + number2
+    print(f"Результат сложения: {number1} + {number2} = {result}")
+    
+except ValueError:
+    print("Ошибка! Вы ввели не целое число.")
+    print("Пожалуйста, вводите только целые числа (например: 5, 10, -3)")
